@@ -52,7 +52,6 @@
   margin-bottom: 5px;
   font-size: 13px;
 }
-
 .product-area > img {
   margin-bottom: 12px;
   object-fit: contain;
@@ -99,12 +98,12 @@
 .left-content > h1 {
   font-family: "ITC Avant Garde Gothic Pro";
 }
-@media screen and (max-width: 1350px) and (min-width: 970px) {
+@media screen and (min-width: 970px) and (max-width: 1350px) {
   .left-content {
     padding: 30px 40px;
   }
 }
-@media screen and (max-width: 1150px) and (min-width: 970px) {
+@media screen and (min-width: 970px) and (max-width: 1150px) {
   .description {
     margin-top: 6px;
     margin-bottom: 16px;
@@ -112,9 +111,6 @@
   #owl-demo {
     margin-top: 35px;
   }
-  /* .product-area > img {
-    max-width: 150px;
-  } */
   .arrow-content {
     padding: 8px;
     border: 1px solid black;
@@ -181,9 +177,6 @@
   }
   .product-menu-title {
     border-bottom: 1px solid white;
-  }
-  .owl-carousel {
-    width: 50vh !important;
   }
   .banner-img {
     box-shadow: inset 10px 10px 50px #000000;

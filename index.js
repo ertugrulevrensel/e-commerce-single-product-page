@@ -11,12 +11,6 @@ $(document).ready(function () {
       0: {
         items: 2.5,
       },
-      600: {
-        items: 2.5,
-      },
-      1000: {
-        items: 2.5,
-      },
     },
     navText: [
       "",
