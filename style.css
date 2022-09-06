@@ -2,6 +2,10 @@
   font-family: "avenir";
   src: url("./font/Avenir.ttc");
 }
+@font-face {
+  font-family: "ITC Avant Garde Gothic Pro";
+  src: url("./font/ITCAvantGardePro-Md.otf");
+}
 * {
   font-family: "avenir";
   box-sizing: border-box;
@@ -30,7 +34,6 @@
 }
 .content-div {
   grid-template-columns: 50% 50%;
-
   position: relative;
 }
 .left-content {
@@ -43,13 +46,14 @@
 .product-menu-title {
   padding: 5px 0;
   border-bottom: 1px solid black;
+  font-weight: 900;
 }
 .product-name {
   margin-bottom: 5px;
+  font-size: 13px;
 }
 
 .product-area > img {
-  /* max-width: 230px; */
   margin-bottom: 12px;
   object-fit: contain;
 }
@@ -79,7 +83,7 @@
 }
 .arrow-content {
   padding: 13px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .owl-next {
   position: absolute !important;
@@ -88,6 +92,12 @@
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: inherit !important;
+}
+.mobile-shadow-effect {
+  display: none;
+}
+.left-content > h1 {
+  font-family: "ITC Avant Garde Gothic Pro";
 }
 @media screen and (max-width: 1350px) and (min-width: 970px) {
   .left-content {
@@ -122,7 +132,7 @@
     border: 1px solid black;
   }
   .owl-next {
-    top: 87px;
+    display: none !important;
   }
   .product-area > img {
     width: auto !important;
@@ -162,12 +172,37 @@
   .product-area {
     width: min-content;
   }
+  .left-content > h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .product-area > img {
+    margin-bottom: 8px;
+  }
+  .product-menu-title {
+    border-bottom: 1px solid white;
+  }
+  .owl-carousel {
+    width: 50vh !important;
+  }
+  .banner-img {
+    box-shadow: inset 10px 10px 50px #000000;
+  }
+  .mobile-shadow-effect {
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.65%);
+    opacity: 0.5;
+  }
 }
 @media screen and (max-width: 550px) {
   .left-content {
     padding: 24px 24px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: 100%;
   }
 }
